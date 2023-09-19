@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #444444;
 }
 
@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -53,10 +53,10 @@ section {
 }
 
 .section-header p {
-  margin: 10px 0 0 0;
+  margin: 2px 0 0 0;
   padding: 0;
-  font-size: 38px;
-  line-height: 42px;
+  font-size: 34px;
+  line-height: 50px;
   font-weight: 700;
   color: #012970;
 }
@@ -186,10 +186,11 @@ section {
 
 .header .logo img {
   max-height: 80px;
+  margin-left: -50px;
 }
 
 .header .logo span {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
   color: rgb(248, 248, 248);
@@ -208,6 +209,7 @@ section {
   padding: 0;
 }
 
+
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -221,7 +223,7 @@ section {
 }
 
 .navbar a,
-.navbar a:focus {
+.navbar a:focus{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -233,6 +235,7 @@ section {
   white-space: nowrap;
   transition: 0.3s;
 }
+ 
 
 .navbar a i,
 .navbar a:focus i {
@@ -254,12 +257,12 @@ section {
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
-  color: #fff;
+
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
+  color:#fff;
   background: #5969f3;
 }
 
@@ -488,10 +491,16 @@ section {
 .hero .info h2 {
   color: #fff;
   margin-bottom: 30px;
+  margin-top: 40px;
   padding-bottom: 30px;
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 46px;
+  font-weight: 600;
   position: relative;
+  
+}
+.hero .info h2 span {
+  color: orange;
+  
 }
 
 .hero .info h2:after {
@@ -696,16 +705,20 @@ section {
 }
 
 .about h3 {
-  font-size: 14px;
+  font-size: calc(1.375rem + 1.5vw);
   font-weight: 700;
   color: #4154f1;
-  text-transform: uppercase;
+  
 }
 
 .about h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 500;
   color: #012970;
+  line-height: 1.5;
+ 
 }
 
 .about p {
@@ -745,7 +758,7 @@ section {
 --------------------------------------------------------------*/
 .values .box {
   padding: 30px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 0 8px rgba(1, 41, 112, 0.08);
   text-align: center;
   transition: 0.3s;
   height: 100%;
@@ -1266,7 +1279,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.75);
+  /* background: rgba(255, 255, 255, 0.75); */
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1647,10 +1660,10 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .clients-slider .swiper-slide img {
+/* .clients .clients-slider .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
-}
+} */
 
 .clients .clients-slider .swiper-slide img:hover {
   opacity: 1;
@@ -2368,16 +2381,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background-color: #03132e;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
 
-.footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f6f9ff;
-  border-top: 1px solid #e1ecff;
-}
+
 
 .footer .footer-newsletter h4 {
   font-size: 24px;
@@ -2388,19 +2397,23 @@ section {
   color: #012970;
 }
 
+
 .footer .footer-newsletter form {
   margin-top: 20px;
-  background: #fff;
+  background:#03132e;
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
   border: 1px solid #e1ecff;
+  
 }
 
 .footer .footer-newsletter form input[type=email] {
+  color:white ;
   border: 0;
   padding: 8px;
   width: calc(100% - 140px);
+  
 }
 
 .footer .footer-newsletter form input[type=submit] {
@@ -2424,10 +2437,10 @@ section {
 }
 
 .footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
+  background-color: #03132e;
+  /* background: white url(../img/footer-bg.png) no-repeat right top; */
   background-size: contain;
   border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
   padding: 60px 0 30px 0;
 }
 
@@ -2441,13 +2454,13 @@ section {
   margin-bottom: 30px;
 }
 
-.footer .footer-top .footer-info .logo {
+.footer .footer-top .footer-info .logo { 
   line-height: 0;
   margin-bottom: 15px;
 }
 
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 6px;
 }
 
@@ -2461,30 +2474,30 @@ section {
 }
 
 .footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 24px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Nunito", sans-serif;
 }
 
 .footer .footer-top .social-links a {
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 25px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: white;
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #012970;
+  transform: scale(1.5);
 }
 
 .footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  color: #012970;
-  text-transform: uppercase;
+  color: white;
   position: relative;
   padding-bottom: 12px;
 }
@@ -2517,29 +2530,25 @@ section {
 }
 
 .footer .footer-top .footer-links ul a {
-  color: #013289;
+  color: #ebedf1;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
+   transform: scale(1.5); 
+  transition: transform .2s; 
 }
 
 .footer .footer-top .footer-contact p {
+  color: white;
   line-height: 26px;
 }
 
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #012970;
+  color: #edeff3;
 }
 
-.footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #012970;
-}
